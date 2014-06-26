@@ -29,6 +29,8 @@ button {
 	color: #4b83f2;
 	background-color: rgba(255, 153, 36, 0); 
 	padding: 8px 30px;
+    display: block;
+    margin: 0 auto;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 	border-radius: 5px;
@@ -36,13 +38,11 @@ button {
 }
 .explain {
 	font-size: 20.7px;
-	width: 50%;
-	float: left;
+	
 }
 .cite {
 	font-size: 28.75px;
-	width: 50%;
-	float: left;
+    font-family: 'Times New Roman';
 }
 .name {
 	font-size: 70%;
@@ -75,4 +75,20 @@ footer {
     text-align: center;
     font-size: 20.37px;
      
+}
+
+.cite > span {
+    color: #4b83f2;
+}
+
+.cite, .explain {
+    text-align: center;
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+}
+
+.right, .left {
+    float: left;
+    width: 50%;
 }
