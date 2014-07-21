@@ -1,67 +1,709 @@
-<html>
+﻿<html>
 <head>
 	<title>Plakat aferowy</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var hash = $(location).attr('hash');
+
+			$('#a').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Aa</big></div> <div class=\"white right\">Akcyza</div></div>" );
+			});
+
+			$('#b').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Bb</big></div> <div class=\"white right\">Bezrobocie</div></div>" );
+			});
+
+			$('#c').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Cc</big></div> <div class=\"white right\">Cynizm</div></div>" );
+			});
+
+			$('#d').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Dd</big></div> <div class=\"white right\">Bezrobocie</div></div>" );
+			});
+
+			$('#e').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ee</big></div> <div class=\"white right\">Emigracja</div></div>" );
+			});
+
+			$('#f').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ff</big></div> <div class=\"white right\">Fiskus</div></div>" );
+			});
+
+			$('#v').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Vv</big></div> <div class=\"white right\">Podatek <br> VAT</div></div>" );
+			});
+
+			$('#w').click( function() {
+				$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ww</big></div> <div class=\"white right\">Władza</div></div>" );
+			});
+
+		});
+	</script>
 </head>
 <body>
 	<header>
 		
 		<ul class="abc">
-			<li>A</li>
-			<li>B</li>
-			<li>C</li>
-			<li>D</li>
-			<li>E</li>
-			<li>F</li>
-			<li>G</li>
-			<li>H</li>
-			<li>I</li>
-			<li>J</li>
-			<li>K</li>
-			<li>L</li>
-			<li>M</li>
-			<li>N</li>
-			<li>O</li>
-			<li>P</li>
-			<li>R</li>
-			<li>S</li>
-			<li>T</li>
-			<li>U</li>
-			<li>W</li>
-			<li>X</li>
-			<li>Y</li>
-			<li>Z</li>
+			<li id="a"><a href="#a">A</a></li>
+			<li id="b"><a href="#b">B</a></li>
+			<li id="c"><a href="#c">C</a></li>
+			<li id="d"><a href="#d">D</a></li>
+			<li id="e"><a href="#e">E</a></li>
+			<li id="f"><a href="#f">F</a></li>
+			<li id="g"><a href="#g">G</a></li>
+			<li id="h"><a href="#h">H</a></li>
+			<li id="i"><a href="#i">I</a></li>
+			<li id="j"><a href="#j">J</a></li>
+			<li id="k"><a href="#k">K</a></li>
+			<li id="l"><a href="#l">L</a></li>
+			<li id="m"><a href="#m">M</a></li>
+			<li id="n"><a href="#n">N</a></li>
+			<li id="o"><a href="#o">O</a></li>
+			<li id="p"><a href="#p">P</a></li>
+			<li id="r"><a href="#r">R</a></li>
+			<li id="s"><a href="#s">S</a></li>
+			<li id="t"><a href="#t">T</a></li>
+			<li id="u"><a href="#u">U</a></li>
+			<li id="v"><a href="#v">V</a></li>
+			<li id="w"><a href="#w">W</a></li>
+			<li id="x"><a href="#x">X</a></li>
+			<li id="z"><a href="#z">Z</a></li>
 		</ul>
 
 	</header>
-<div class="left">
-	<div class="cite">
-		<span>“</span>Przysięgam Polakom, że każdy,
-		kto w moim rządzie zaproponuje
-		podwyżkę podatków, zostanie
-		przeze mnie osobiście wyrzucony.<span>”</span>
 
-		<p class="name">Donald Tusk (PO)
-		<br>
-		<small>Premier RP</small></p>
+<div id="aContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Przysięgam Polakom, że każdy,
+			kto w moim rządzie zaproponuje
+			podwyżkę podatków, zostanie
+			przeze mnie osobiście wyrzucony.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
 	</div>
+	<div class="right">
+		<div class="explain">
+			Akcyza - z założenia podatek od dóbr luksusowych. Wysoka jej stawka doprowadziła do zwiększenia przemytu papierosów i rozrostu szarej strefy. W 2014 o 15% podniesiono stawkę akcyzy od mocnych alkoholi. 
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
 </div>
-<div class="right">
-	<div class="explain">
-		VAT płacisz codziennie, kupując żywność, ubrania,
-		płacąc za artykuły pierwszej potrzeby. Czy wiesz,
-		że Unia Europejska pozwala obniżyć go do 15%,
-		a Polska ma jedną z najwyższych stawek w Europie?
 
-		<button>Więcej</button>
-	</div></div>
+<div id="bContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Ależ nie są bezrobotnymi ci, którzy pracują za granicą.<span>”</span>
 
-	<footer>
-		<a href="#">Pobierz plakat A1</a>
-        <img src="img/v/big.png" class="min1"/>
-        <img src="img/v/small.png" class="min2"/>
-        <a href="#">Pobierz ulotkę A6</a>
-	</footer>
+			<p class="name">Kazimierz Kleina (PO)
+			<br>
+			<small>Senator</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W 2007 roku bezrobocie wynosiło średnio 12,7%, w 2008 spadło do 9,81; w następnych latach mogliśmy odnotować wyłącznie jego wzrost. W 2013 roku średnia wysokość rejestrowanego bezrobocia wynosiła już 13,5%. Jednocześnie z Polski emigruje coraz więcej ludzi. Według raportu przeprowadzonego przez Instytut Millward Brown w 2014 roku, aż 83% Polaków rozważa emigrację zarobkową. 
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="cContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Cała ambasada na Kubie dwoi się i troi, żeby zdobyć najlepsze cygara dla Tuska.<span>”</span>
+
+			<p class="name">Radosław Sikorski (PO)
+			<br>
+			<small>Minister Spraw Zagranicznych</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Jak wynika ze sprawozdania finansowego Platformy Obywatelskiej, w latach od 2010 - 2012 przelała ona 96 tys. złotych publicznych pieniędzy do firmy zajmującej się sprzedażą ekskluzywnych win i cygar. Po ujawnieniu nagrań z afery podsłuchowej Radosław Sikorski zwrócił kwotę jaką wydał wino spożyte na spotkaniu z Janem Vincentem Rostowskim, odmówił zapłacenia za sam obiad. W analogicznym przypadku w Szwecji w 1995 roku Mona Sahlin odeszła z życia politycznego po ujawnieniu afery Toblerone - zakupiła ona za pieniądze z rządowej karty paczkę czekoladek Toblerone, papierosów i pieluch.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="dContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Wiesz, że polsko-amerykański sojusz to jest nic niewart. Jest wręcz szkodliwy, bo stwarza Polsce fałszywe poczucie bezpieczeństwa [...]. Bullshit kompletny..<span>”</span>
+
+			<p class="name">Radosław Sikorski (PO)
+			<br>
+			<small>Minister Spraw Zagranicznych</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			VAT płacisz codziennie, kupując żywność, ubrania,
+			płacąc za artykuły pierwszej potrzeby. Czy wiesz,
+			że Unia Europejska pozwala obniżyć go do 15%,
+			a Polska ma jedną z najwyższych stawek w Europie?
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="eContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Sprawimy, że Polacy z emigracji będą chcieli wracać do domu i inwestować w Polsce.<span>”</span>
+
+			<p class="name">10 zobowiązań Platformy
+			<br>
+			<small>2007 rok</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Jedynie 17 na 100 Polaków nie rozważa emigracji! Myślą o niej już nie tylko ci, którzy tu nie mają co ze sobą zrobić: ani nie uczą się, ani nie pracują. Myśl o wyjeździe zaczęła towarzyszyć wszystkim grupom: wykształconej i nie; miejskiej i wiejskiej. Także ci, którzy mają etat, a nawet ci, którzy zarabiają powyżej 5 tys. złotych – nie wykluczają emigracji
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="fContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Przysięgam Polakom, że każdy,
+			kto w moim rządzie zaproponuje
+			podwyżkę podatków, zostanie
+			przeze mnie osobiście wyrzucony.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W urzędzie skarbowym coraz ważniejsze są wyniki. W 2014 roku pracownicy wielu oddziałów fiskusa mają być rozliczani z efektów pracy, czyli kwot jakie przyniosą kontrole. Ucierpi przy tym jakość oraz rzetelność oceny sytuacji.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="gContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Myśmy grali w piłkę, bo była przerwa, to wyjedliśmy cały szczaw z nasypu i wszystkie śliwki ulęgałki, mirabelki jedliśmy. Dzisiaj te wszystkie gruszki, śliwki leżą i nikt tego nie zbiera. Chłopaki grają w piłkę na tych samych boiskach, szczawiu nikt nie zjada. Ja nie mogę słuchać o przynajmniej 800 tys. głodnych dzieciach.<span>”</span>
+
+			<p class="name">Stefan Niesiołowski (PO)
+			<br>
+			<small>Poseł</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Z danych GUS wynika, że około 700 tysięcy (10%) dzieci i
+			młodzieży do 18 roku życia jest zagrożonych skrajnym
+			ubóstwem.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="hContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Na dziewięćdziesiąt procent, Rysiu, że załatwimy.<span>”</span>
+
+			<p class="name">Zbigniew Chlebowski (PO)
+			<br>
+			<small>Poseł VI kadencji Sejmu</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W 2009 Zbigniew Chlebowski został
+			podsłuchany przez CBA podczas rozmów z
+			przedstawicielami branży hazardowej. Z treści rozmów
+			w ynika, że blokował on ustawę, niekorzystną dla właścicieli
+			kasyn lub automatów o niskich wygranych, która miała
+			n ałożyć na ich działalność dodatkowy podatek. Zwykli
+			o bywatele n ie mają takiego wpływu na rządzących,
+			w niosek o referendum w sprawie 6 latków w szkołach 
+			podpisany przez około milion obywateli został odrzucony przez Sejm.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="iContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Polska jest zainteresowana wymianą doświadczeń z Chinami w dziedzinie budowy państwa prawa i społeczeństwa obywatelskiego.<span>”</span>
+
+			<p class="name">Ewa Kopacz (PO)
+			<br>
+			<small>Marszałek Sejmu</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Od stycznia 2011 roku do połowy 2012 roku, Ministerstwo Finansów 10 338 razy zwracało się do firm telekomunikacyjnych z prośbą o udostępnienie danych z bilingów. W 2013 roku policja oraz inne służby specjalne poprosiły o to samo 2 mln 187 tys. razy, było to o 55 tysięcy więcej niż w poprzednim roku.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="jContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Nie wierzę w emeryturę z ZUS.<span>”</span>
+
+			<p class="name">Waldemar Pawlak (PSL)
+			<br>
+			<small>Poseł</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Jedynym pomysłem rządu na reformę emerytalną było złamanie zawartej z obywatelami umowy i podniesienie wieku emerytalnego. Tylko w 2014 państwo będzie musiało dopłacić do budżetu ZUS 30 mld zł, a niż demograficzny ciągle rośnie.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="kContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Przysięgam Polakom, że każdy,
+			kto w moim rządzie zaproponuje
+			podwyżkę podatków, zostanie
+			przeze mnie osobiście wyrzucony.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Rząd wraz z najważniejszymi państwowymi instytucjami ma do dyspozycji 1700 limuzyn. Zaś w całym kraju jest tylko 1500 karetek pogotowia.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="lContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Chcę głośno powiedzieć: nie bójcie się walczyć o swoje prawa.<span>”</span>
+
+			<p class="name">Bartosz Arłukowicz (PO)
+			<br>
+			<small>Minister Zdrowia</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			1 lipca 2014 roku ukazała się nowa lista leków refundowanych. Pierwsze dziesięć miejsc na liście leków, które najbardziej podrożały zajmują medykamenty stosowane w leczeniu raka, pierwszy z nich przed zmianą kosztował 3,20 a po zmianie 122,80. Minister Zdrowia zapowiada, że zmiany te mają charakter przejściowy i będą obowiązywały w okresie wakacji. Czy nowotwór zaplanował już urlop?
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="mContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Tanie państwo okazało się mitem, fałszem, oszustwem.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Oskarażając J. Kaczyńskiego, debata 2007</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W 2014 roku Ministerstwo Pracy uruchomiło portal internetowy dla bezdomnych i osób poniżej minimum socjalnego. Na jego uruchomienie wydano 3,3 miliona złotych, łącznie na cały program (wraz z komputerami dla urzędników i innymi wydatkami) przeznaczono 50 milionów złotych, ilu klientów z niego skorzysta?
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="nContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Mamy oczywiście tą pieprzoną Radę Polityki Pieniężnej... Ale... ale jesteśmy w stanie z nią zagrać. Ale wtedy moim warunkiem, excuse-moi, jest dymisja Ministra Finansów […]. I wtedy zrobimy to, co trzeba..<span>”</span>
+
+			<p class="name">Marek Belka
+			<br>
+			<small>Prezes Narodowego Banku Polskiego</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Narodowy Bank Polski w założeniu ma chronić naszą walutę - polskiego złotego. Ma być również niezależny od polskiego rządu oraz apolityczny. W skutek afery taśmowej mogliśmy poznać kulisy sprawowania władzy. Minister Sienkiewicz omawiał z prezesem NBP Markiem Belką w jaki sposób mogą wspomóc Platformę Obywatelską w nadchodzących wyborach.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="oContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Nie ma mowy o tym, żeby państwo sięgnęło po pieniądze, które Polacy odkładali w OFE. To są pieniądze, które mają być w przyszłości gwarancją dobrej emerytury. Nie mam mowy o tym, żeby te pieniądze zabrać komukolwiek.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W Lutym 2014 roku rząd koalicji PO-PSL umorzył obligacje skarbowe wykupione z pieniędzy przekazywanych przez przyszłych emerytów do OFE. W praktyce zabrano połowę zgromadzonych na bezpieczną przyszłość oszczędności, zostaną one wykorzystane na bieżące potrzeby państwa.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="pContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Sam poziom opodatkowania i oskładkowania (pracy – przyp. red.) w Polsce jest niski.<span>”</span>
+
+			<p class="name">Mateusz Szczurek
+			<br>
+			<small>Minister Finansów</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W przypadku zawarcia z pracownikiem umowy o pracę zakładającej otrzymanie przez niego co miesiąc kwoty wynagrodzenia odpowiadającej minimalnej krajowej, pracodawca będzie musiał przeznaczyć na ten cel 2028,43 zł. Ostatecznie na koncie zatrudnionego zostanie 1237,20. Należy pamiętać również o innych daninach publicznych, takich jak: VAT, akcyza, podatek śmieciowy, podatek od czynności cywilno-prawnych, podatek od nieruchomości i inne…
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="rContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Zadaniem Państwa jest roztropne wspieranie rodziny i tradycyjnych norm obyczajowych, służących jej trwałości i rozwojowi.<span>”</span>
+
+			<p class="name">Deklaracja ideowa Platformy Obywatelskiej
+			<br>
+			<small>2001 rok</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W 2013 roku w 224 państwach świata przeprowadzono badanie dzietności. Jak się okazało, Polska zajmuje jedną z ostatnich lokat - 212 miejsce. Nasz system emerytalny w całości opiera się na tzw. "solidarności międzypokoleniowej" czyli młodsze pokolenia utrzymują starsze. Niestety, coraz mniej małżeństw w Polsce decyduje się na dziecko.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="sContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Napatrzyłem się na ludzi władzy, którzy myślą, że wszystko im wolno. Których pazerność nie zna granic. Ale dziś mówię z całą powagą: koniec z ich przywilejami. Weźmiemy za to odpowiedzialność.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Minister Pracy, Władysław Kosiniak-Kamysz (PSL) zatrudnia dla siebie i swoich 6 zastępców aż 19 kierowców. Dla porównania, w Szwecji żaden z ministrów nie może liczyć na służbowy samochód, a w Wielkiej Brytanii to prawo przysługuje tylko Ministrowi Spraw Zagranicznych.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="tContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Jestem poruszony zawartością tych taśm. Dziękuję dziennikarzom, za wspieranie demokracji poprzez ujawnienie kompromitującego przypadku skandalicznej korupcji politycznej jakiej dopuścił się PiS. Miliony Polaków mogły poznać dzięki tym nagraniom kulisy kuchni politycznej kompromitującej obecny rząd.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Tak Donald Tusk wypowiadał się o taśmach Renaty Beger. W 2014 roku, gdy sprawa dotyczyła jego rządu radykalnie zmienił zdanie: "Taśmy powstały nielegalnie - teraz najważniejsze zadanie, to ustalić, kto nagrał te rozmowy".
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="uContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>To nieprawda! Wypracowuję ją jako urzędnik państwowy, wydając panu zaświadczenia, by mógł pan prowadzić działalność gospodarczą, przygotowując działkę do inwestycji i tak dalej. W sumie to ja panu pozwalam pracować.<span>”</span>
+
+			<p class="name">Elżbieta Jakubiak (PJN)
+			<br>
+			<small>Poseł na Sejm VI kadencji</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W 2014 roku w urzędach administracji centralnej (ministerstwa, kancelaria premiera itp.) zatrudnionych było prawie o 250 osób więcej niż przed rokiem i o 700 więcej niż dwa lata temu. Łączna liczba urzędników w tych instytucjach przekracza już 15 000. Również z planu finansowego NFZ na 2015 rok wynika, że pieniędzy będzie więcej… Zostaną one wykorzystane na 70 nowych etatów, ze względu na te zatrudnienia, pula na płace wzrośnie o 4,4 miliona złotych.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="vContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Przysięgam Polakom, że każdy,
+			kto w moim rządzie zaproponuje
+			podwyżkę podatków, zostanie
+			przeze mnie osobiście wyrzucony.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			VAT płacisz codziennie, kupując żywność, ubrania,
+			płacąc za artykuły pierwszej potrzeby. Czy wiesz,
+			że Unia Europejska pozwala obniżyć go do 15%,
+			a Polska ma jedną z najwyższych stawek w Europie?
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="wContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Praca matką wszystkiego dobrego.<span>”</span>
+
+			<p class="name">Motto Rady Ochrony Pracy przy Sejmie.
+			<br>
+			<small></small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			Sejmowa Rada Ochrony Pracy obraduje około 12-13 razy do roku. Zwykle spotkania trwają około godzinę. Przewodnicząca tego gremium Katarzyna Mrzygłocka (PO) w 2013 roku zarobiła 40,9 tys. zł z tytułu piastowania tej funkcji. Co było jedynie dodatkiem do jej regularnej pensji i diety poselskiej (ok. 160 tys. zł rocznie). Przyjmując, że poświęciła 20 godzin na czas spędzony w radzie jej stawka wynosiła 2050 zł/h. Czy znasz efekty jej prac?
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="xContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Przysięgam Polakom, że każdy,
+			kto w moim rządzie zaproponuje
+			podwyżkę podatków, zostanie
+			przeze mnie osobiście wyrzucony.<span>”</span>
+
+			<p class="name">Donald Tusk (PO)
+			<br>
+			<small>Premier RP</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W 2015 roku kolejne wybory parlamentarne. Zagłosuj zgodnie z sumieniem, nadeszła pora, by rząd i politycy ponieśli odpowiedzialność za swoje czyny.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
+
+<div id="zContent">
+	<div class="left">
+		<div class="cite">
+			<span>“</span>Dzięki reformom proponowanym przez Platformę Obywatelską system opieki zdrowotnej stanie się efektywniejszy.<span>”</span>
+
+			<p class="name">Program Wyborczy PO
+			<br>
+			<small>2007 rok</small></p>
+		</div>
+	</div>
+	<div class="right">
+		<div class="explain">
+			W 2013 roku Polska zajęła 31. miejsce na 34. w rankingu Europejskiego Konsumenckiego Indeksu Zdrowia, tuż po Rumunii, Łotwie i Serbii. W porównaniu z 2012 r. nastąpił spadek aż o 4 pozycje. Natomiast liczba osób umierających w wyniku chorób nowotworowych jest jedną z największych w Europie.
+
+			<button>Więcej</button>
+		</div></div>
+
+		<footer>
+			<a href="#">Pobierz plakat A1</a>
+	        <img src="img/v/big.png" class="min1"/>
+	        <img src="img/v/small.png" class="min2"/>
+	        <a href="#">Pobierz ulotkę A6</a>
+		</footer>
+</div>
 
 </body>
 </html>

@@ -23,7 +23,7 @@ header {
 }
 a {
 	color: #727272;
-	text-decoration: underline;
+	text-decoration: none;
 }
 button {
 	border: 2px solid #4b83f2;
@@ -31,7 +31,7 @@ button {
 	background-color: rgba(255, 153, 36, 0); 
 	padding: 8px 30px;
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 	border-radius: 5px;
@@ -105,3 +105,26 @@ width: 91px;
 margin-bottom: -7px;
 margin-left: -61px;
 }
+
+.white {
+    color: #fff;
+}
+
+.blue {
+    color: #4b83f2;
+}
+
+big {
+    font-size: 170%;
+    border-right: 2px solid #727272;
+    padding-right: 20px;
+}
+
+.abcClick {
+    margin: 0 40px;
+    vertical-align: middle;
+    position: relative;
+    top: 25px;
+}
+
+#bContent, #cContent, #dContent, #eContent, #fContent, #gContent, #hContent, #iContent, #jContent, #kContent, #lContent, #mContent, #nContent, #oContent, #pContent, #rContent, #sContent, #tContent, #uContent, #vContent, #wContent, #xContent, #zContent { display: none; }
