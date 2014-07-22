@@ -7,7 +7,7 @@ body {
     overflow: hidden;
 }
 header {
-	margin-bottom: 15%;
+	margin-bottom: 10%;
 	margin-top: 5%;
 }
 .abc {
@@ -25,6 +25,11 @@ a {
 	color: #727272;
 	text-decoration: none;
 }
+
+a:hover {
+    color:#fff;
+}
+
 button {
 	border: 2px solid #4b83f2;
 	color: #4b83f2;
@@ -128,3 +133,100 @@ big {
 }
 
 #bContent, #cContent, #dContent, #eContent, #fContent, #gContent, #hContent, #iContent, #jContent, #kContent, #lContent, #mContent, #nContent, #oContent, #pContent, #rContent, #sContent, #tContent, #uContent, #vContent, #wContent, #xContent, #zContent { display: none; }
+
+#a:hover:after {
+    content: "a";
+    color: #fff;
+}
+#b:hover:after {
+    content: "b";
+    color: #fff;
+}
+#c:hover:after {
+    content: "c";
+    color: #fff;
+}
+#d:hover:after {
+    content: "d";
+    color: #fff;
+}
+#e:hover:after {
+    content: "e";
+    color: #fff;
+}
+#f:hover:after {
+    content: "f";
+    color: #fff;
+}
+#g:hover:after {
+    content: "g";
+    color: #fff;
+}
+#h:hover:after {
+    content: "h";
+    color: #fff;
+}
+#i:hover:after {
+    content: "i";
+    color: #fff;
+}
+#j:hover:after {
+    content: "j";
+    color: #fff;
+}
+#k:hover:after {
+    content: "k";
+    color: #fff;
+}
+#l:hover:after {
+    content: "l";
+    color: #fff;
+}
+#m:hover:after {
+    content: "m";
+    color: #fff;
+}
+#n:hover:after {
+    content: "n";
+    color: #fff;
+}
+#o:hover:after {
+    content: "o";
+    color: #fff;
+}
+#p:hover:after {
+    content: "p";
+    color: #fff;
+}
+#r:hover:after {
+    content: "r";
+    color: #fff;
+}
+#s:hover:after {
+    content: "s";
+    color: #fff;
+}
+#t:hover:after {
+    content: "t";
+    color: #fff;
+}
+#u:hover:after {
+    content: "u";
+    color: #fff;
+}
+#v:hover:after {
+    content: "v";
+    color: #fff;
+}
+#w:hover:after {
+    content: "w";
+    color: #fff;
+}
+#x:hover:after {
+    content: "x";
+    color: #fff;
+}
+#z:hover:after {
+    content: "z";
+    color: #fff;
+}
