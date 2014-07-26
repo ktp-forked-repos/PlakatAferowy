@@ -4,14 +4,23 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
+
+function showContent() {
+	var hash = $(location).attr('hash');
+	var hashConcatContent = hash + "Content";
+	$(hashConcatContent).fadeIn();
+};
+
 $(document).ready(function(){
+
+	showContent();
 
 	$('#a').click( function() {
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Aa</big></div> <div class=\"white right\">Akcyza</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"aColor\">Aa</big></div> <div class=\"white right\">Akcyza</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#aContent" ).fadeIn();
@@ -22,8 +31,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Bb</big></div> <div class=\"white right\">Bezrobocie</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"bColor\">Bb</big></div> <div class=\"white right\">Bezrobocie</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#bContent" ).fadeIn();
@@ -34,8 +43,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Cc</big></div> <div class=\"white right\">Cynizm</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"cColor\">Cc</big></div> <div class=\"white right\">Cynizm</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#cContent" ).fadeIn();
@@ -46,8 +55,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Dd</big></div> <div class=\"white right\">Leszke</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"dColor\">Dd</big></div> <div class=\"white right\">Leszke</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#dContent" ).fadeIn();
@@ -58,8 +67,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ee</big></div> <div class=\"white right\">Emigracja</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"eColor\">Ee</big></div> <div class=\"white right\">Emigracja</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#eContent" ).fadeIn();
@@ -70,8 +79,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ff</big></div> <div class=\"white right\">Fiskus</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"fColor\">Ff</big></div> <div class=\"white right\">Fiskus</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#fContent" ).fadeIn();
@@ -82,8 +91,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Gg</big></div> <div class=\"white right\">Głód</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"gColor\">Gg</big></div> <div class=\"white right\">Głód</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#gContent" ).fadeIn();
@@ -94,8 +103,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Hh</big></div> <div class=\"white right\">Hazard</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"hColor\">Hh</big></div> <div class=\"white right\">Hazard</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#hContent" ).fadeIn();
@@ -106,8 +115,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ii</big></div> <div class=\"white right\">Inwigilacja</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"iColor\">Ii</big></div> <div class=\"white right\">Inwigilacja</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#iContent" ).fadeIn();
@@ -118,8 +127,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Jj</big></div> <div class=\"white right\">Jaka emerytura?</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"jColor\">Jj</big></div> <div class=\"white right\">Jaka emerytura?</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#jContent" ).fadeIn();
@@ -130,8 +139,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Kk</big></div> <div class=\"white right\">Karetki</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"kColor\">Kk</big></div> <div class=\"white right\">Karetki</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#kContent" ).fadeIn();
@@ -142,8 +151,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ll</big></div> <div class=\"white right\">Leki</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"lColor\">Ll</big></div> <div class=\"white right\">Leki</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#lContent" ).fadeIn();
@@ -154,8 +163,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Mm</big></div> <div class=\"white right\">Marnotrawstwo</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"mColor\">Mm</big></div> <div class=\"white right\">Marnotrawstwo</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#mContent" ).fadeIn();
@@ -166,8 +175,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Nn</big></div> <div class=\"white right\">Niezależność NBP</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"nColor\">Nn</big></div> <div class=\"white right\">Niezależność NBP</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#nContent" ).fadeIn();
@@ -178,8 +187,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Oo</big></div> <div class=\"white right\">OFE</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"oColor\">Oo</big></div> <div class=\"white right\">OFE</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#oContent" ).fadeIn();
@@ -190,8 +199,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Pp</big></div> <div class=\"white right\">Podatek dochodowy</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"pColor\">Pp</big></div> <div class=\"white right\">Podatek dochodowy</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#pContent" ).fadeIn();
@@ -202,8 +211,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Rr</big></div> <div class=\"white right\">Rodzina</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"rColor\">Rr</big></div> <div class=\"white right\">Rodzina</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#rContent" ).fadeIn();
@@ -214,8 +223,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ss</big></div> <div class=\"white right\">Szofer</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"sColor\">Ss</big></div> <div class=\"white right\">Szofer</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#sContent" ).fadeIn();
@@ -226,8 +235,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Tt</big></div> <div class=\"white right\">Taśmy</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"tColor\">Tt</big></div> <div class=\"white right\">Taśmy</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#tContent" ).fadeIn();
@@ -238,8 +247,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Uu</big></div> <div class=\"white right\">Urzędnicy</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"uColor\">Uu</big></div> <div class=\"white right\">Urzędnicy</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#uContent" ).fadeIn();
@@ -250,8 +259,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Vv</big></div> <div class=\"white right\">Podatek VAT</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"vColor\">Vv</big></div> <div class=\"white right\">Podatek VAT</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#vContent" ).fadeIn();
@@ -261,9 +270,9 @@ $(document).ready(function(){
 	$('#w').click( function() {
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Ww</big></div> <div class=\"white right\">Wypłata</div></div>" );
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"wColor\">Ww</big></div> <div class=\"white right\">Wypłata</div></div>" );
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
+		$(hash).html(oldHash.toUpperCase());
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#wContent" ).fadeIn();
@@ -274,8 +283,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Xx</big></div> <div class=\"white right\">Wybory</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"xColor\">Xx</big></div> <div class=\"white right\">Wybory</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#xContent" ).fadeIn();
@@ -286,8 +295,8 @@ $(document).ready(function(){
 		var hash = $(location).attr('hash');
 		var hashConcatContent = hash + "Content";
 		var oldHash = hash.substring(1);
-		$(hash).html(oldHash);
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"blue\">Zz</big></div> <div class=\"white right\">Zdrowie</div></div>" );
+		$(hash).html(oldHash.toUpperCase());
+		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"zColor\">Zz</big></div> <div class=\"white right\">Zdrowie</div></div>" );
 		$(hashConcatContent).fadeOut(
 				function() {
 					$( "#zContent" ).fadeIn();
@@ -332,7 +341,7 @@ $(document).ready(function(){
 <div id="aContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Chuj, dupa i kamieni kupa.<span>”</span>
+<span class="aColor">“</span>Chuj, dupa i kamieni kupa.<span class="aColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -343,7 +352,7 @@ $(document).ready(function(){
 <div class="explain">
 Akcyza - z założenia podatek od dóbr luksusowych. Wysoka jej stawka doprowadziła do zwiększenia przemytu papierosów i rozrostu szarej strefy. W 2014 o 15% podniesiono stawkę akcyzy od mocnych alkoholi.
 
-<button>Więcej</button>
+<button class="aColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -357,7 +366,7 @@ Akcyza - z założenia podatek od dóbr luksusowych. Wysoka jej stawka doprowadz
 <div id="bContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Ależ nie są bezrobotnymi ci, którzy pracują za granicą.<span>”</span>
+<span class="bColor">“</span>Ależ nie są bezrobotnymi ci, którzy pracują za granicą.<span class="bColor">”</span>
 
 <p class="name">Kazimierz Kleina (PO)
 <br>
@@ -368,7 +377,7 @@ Akcyza - z założenia podatek od dóbr luksusowych. Wysoka jej stawka doprowadz
 <div class="explain">
 W 2007 roku bezrobocie wynosiło średnio 12,7%, w 2008 spadło do 9,81; w następnych latach mogliśmy odnotować wyłącznie jego wzrost. W 2013 roku średnia wysokość rejestrowanego bezrobocia wynosiła już 13,5%. Jednocześnie z Polski emigruje coraz więcej ludzi. Według raportu przeprowadzonego przez Instytut Millward Brown w 2014 roku, aż 83% Polaków rozważa emigrację zarobkową.
 
-<button>Więcej</button>
+<button class="bColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -382,7 +391,7 @@ W 2007 roku bezrobocie wynosiło średnio 12,7%, w 2008 spadło do 9,81; w nast�
 <div id="cContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Cała ambasada na Kubie dwoi się i troi, żeby zdobyć najlepsze cygara dla Tuska.<span>”</span>
+<span class="cColor">“</span>Cała ambasada na Kubie dwoi się i troi, żeby zdobyć najlepsze cygara dla Tuska.<span class="cColor">”</span>
 
 <p class="name">Radosław Sikorski (PO)
 <br>
@@ -393,7 +402,7 @@ W 2007 roku bezrobocie wynosiło średnio 12,7%, w 2008 spadło do 9,81; w nast�
 <div class="explain">
 Jak wynika ze sprawozdania finansowego Platformy Obywatelskiej, w latach od 2010 - 2012 przelała ona 96 tys. złotych publicznych pieniędzy do firmy zajmującej się sprzedażą ekskluzywnych win i cygar. Po ujawnieniu nagrań z afery podsłuchowej Radosław Sikorski zwrócił kwotę jaką wydał wino spożyte na spotkaniu z Janem Vincentem Rostowskim, odmówił zapłacenia za sam obiad. W analogicznym przypadku w Szwecji w 1995 roku Mona Sahlin odeszła z życia politycznego po ujawnieniu afery Toblerone - zakupiła ona za pieniądze z rządowej karty paczkę czekoladek Toblerone, papierosów i pieluch.
 
-<button>Więcej</button>
+<button class="cColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -407,7 +416,7 @@ Jak wynika ze sprawozdania finansowego Platformy Obywatelskiej, w latach od 2010
 <div id="dContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Wiesz, że polsko-amerykański sojusz to jest nic niewart. Jest wręcz szkodliwy, bo stwarza Polsce fałszywe poczucie bezpieczeństwa [...]. Bullshit kompletny..<span>”</span>
+<span class="dColor">“</span>Wiesz, że polsko-amerykański sojusz to jest nic niewart. Jest wręcz szkodliwy, bo stwarza Polsce fałszywe poczucie bezpieczeństwa [...]. Bullshit kompletny..<span class="dColor">”</span>
 
 <p class="name">Radosław Sikorski (PO)
 <br>
@@ -421,7 +430,7 @@ płacąc za artykuły pierwszej potrzeby. Czy wiesz,
 że Unia Europejska pozwala obniżyć go do 15%,
 a Polska ma jedną z najwyższych stawek w Europie?
 
-<button>Więcej</button>
+<button class="dColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -435,7 +444,7 @@ a Polska ma jedną z najwyższych stawek w Europie?
 <div id="eContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Sprawimy, że Polacy z emigracji będą chcieli wracać do domu i inwestować w Polsce.<span>”</span>
+<span class="eColor">“</span>Sprawimy, że Polacy z emigracji będą chcieli wracać do domu i inwestować w Polsce.<span class="eColor">”</span>
 
 <p class="name">10 zobowiązań Platformy
 <br>
@@ -446,7 +455,7 @@ a Polska ma jedną z najwyższych stawek w Europie?
 <div class="explain">
 Jedynie 17 na 100 Polaków nie rozważa emigracji! Myślą o niej już nie tylko ci, którzy tu nie mają co ze sobą zrobić: ani nie uczą się, ani nie pracują. Myśl o wyjeździe zaczęła towarzyszyć wszystkim grupom: wykształconej i nie; miejskiej i wiejskiej. Także ci, którzy mają etat, a nawet ci, którzy zarabiają powyżej 5 tys. złotych – nie wykluczają emigracji
 
-<button>Więcej</button>
+<button class="eColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -460,10 +469,10 @@ Jedynie 17 na 100 Polaków nie rozważa emigracji! Myślą o niej już nie tylko
 <div id="fContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Przysięgam Polakom, że każdy,
+<span class="eColor">“</span>Przysięgam Polakom, że każdy,
 kto w moim rządzie zaproponuje
 podwyżkę podatków, zostanie
-przeze mnie osobiście wyrzucony.<span>”</span>
+przeze mnie osobiście wyrzucony.<span class="eColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -474,7 +483,7 @@ przeze mnie osobiście wyrzucony.<span>”</span>
 <div class="explain">
 W urzędzie skarbowym coraz ważniejsze są wyniki. W 2014 roku pracownicy wielu oddziałów fiskusa mają być rozliczani z efektów pracy, czyli kwot jakie przyniosą kontrole. Ucierpi przy tym jakość oraz rzetelność oceny sytuacji.
 
-<button>Więcej</button>
+<button class="fColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -488,7 +497,7 @@ W urzędzie skarbowym coraz ważniejsze są wyniki. W 2014 roku pracownicy wielu
 <div id="gContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Myśmy grali w piłkę, bo była przerwa, to wyjedliśmy cały szczaw z nasypu i wszystkie śliwki ulęgałki, mirabelki jedliśmy. Dzisiaj te wszystkie gruszki, śliwki leżą i nikt tego nie zbiera. Chłopaki grają w piłkę na tych samych boiskach, szczawiu nikt nie zjada. Ja nie mogę słuchać o przynajmniej 800 tys. głodnych dzieciach.<span>”</span>
+<span class="gColor">“</span>Myśmy grali w piłkę, bo była przerwa, to wyjedliśmy cały szczaw z nasypu i wszystkie śliwki ulęgałki, mirabelki jedliśmy. Dzisiaj te wszystkie gruszki, śliwki leżą i nikt tego nie zbiera. Chłopaki grają w piłkę na tych samych boiskach, szczawiu nikt nie zjada. Ja nie mogę słuchać o przynajmniej 800 tys. głodnych dzieciach.<span class="gColor">”</span>
 
 <p class="name">Stefan Niesiołowski (PO)
 <br>
@@ -501,7 +510,7 @@ Z danych GUS wynika, że około 700 tysięcy (10%) dzieci i
 młodzieży do 18 roku życia jest zagrożonych skrajnym
 ubóstwem.
 
-<button>Więcej</button>
+<button class="gColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -515,7 +524,7 @@ ubóstwem.
 <div id="hContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Na dziewięćdziesiąt procent, Rysiu, że załatwimy.<span>”</span>
+<span class="hColor">“</span>Na dziewięćdziesiąt procent, Rysiu, że załatwimy.<span class="hColor">”</span>
 
 <p class="name">Zbigniew Chlebowski (PO)
 <br>
@@ -534,7 +543,7 @@ o bywatele n ie mają takiego wpływu na rządzących,
 w niosek o referendum w sprawie 6 latków w szkołach
 podpisany przez około milion obywateli został odrzucony przez Sejm.
 
-<button>Więcej</button>
+<button class="hColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -548,7 +557,7 @@ podpisany przez około milion obywateli został odrzucony przez Sejm.
 <div id="iContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Polska jest zainteresowana wymianą doświadczeń z Chinami w dziedzinie budowy państwa prawa i społeczeństwa obywatelskiego.<span>”</span>
+<span class="iColor">“</span>Polska jest zainteresowana wymianą doświadczeń z Chinami w dziedzinie budowy państwa prawa i społeczeństwa obywatelskiego.<span class="IColor">”</span>
 
 <p class="name">Ewa Kopacz (PO)
 <br>
@@ -559,7 +568,7 @@ podpisany przez około milion obywateli został odrzucony przez Sejm.
 <div class="explain">
 Od stycznia 2011 roku do połowy 2012 roku, Ministerstwo Finansów 10 338 razy zwracało się do firm telekomunikacyjnych z prośbą o udostępnienie danych z bilingów. W 2013 roku policja oraz inne służby specjalne poprosiły o to samo 2 mln 187 tys. razy, było to o 55 tysięcy więcej niż w poprzednim roku.
 
-<button>Więcej</button>
+<button class="iColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -573,7 +582,7 @@ Od stycznia 2011 roku do połowy 2012 roku, Ministerstwo Finansów 10 338 razy z
 <div id="jContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Nie wierzę w emeryturę z ZUS.<span>”</span>
+<span class="jColor">“</span>Nie wierzę w emeryturę z ZUS.<span class="jColor">”</span>
 
 <p class="name">Waldemar Pawlak (PSL)
 <br>
@@ -584,7 +593,7 @@ Od stycznia 2011 roku do połowy 2012 roku, Ministerstwo Finansów 10 338 razy z
 <div class="explain">
 Jedynym pomysłem rządu na reformę emerytalną było złamanie zawartej z obywatelami umowy i podniesienie wieku emerytalnego. Tylko w 2014 państwo będzie musiało dopłacić do budżetu ZUS 30 mld zł, a niż demograficzny ciągle rośnie.
 
-<button>Więcej</button>
+<button class="jColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -598,10 +607,10 @@ Jedynym pomysłem rządu na reformę emerytalną było złamanie zawartej z obyw
 <div id="kContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Przysięgam Polakom, że każdy,
+<span class="kColor">“</span>Przysięgam Polakom, że każdy,
 kto w moim rządzie zaproponuje
 podwyżkę podatków, zostanie
-przeze mnie osobiście wyrzucony.<span>”</span>
+przeze mnie osobiście wyrzucony.<span class="kColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -612,7 +621,7 @@ przeze mnie osobiście wyrzucony.<span>”</span>
 <div class="explain">
 Rząd wraz z najważniejszymi państwowymi instytucjami ma do dyspozycji 1700 limuzyn. Zaś w całym kraju jest tylko 1500 karetek pogotowia.
 
-<button>Więcej</button>
+<button class="kColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -626,7 +635,7 @@ Rząd wraz z najważniejszymi państwowymi instytucjami ma do dyspozycji 1700 li
 <div id="lContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Chcę głośno powiedzieć: nie bójcie się walczyć o swoje prawa.<span>”</span>
+<span class="lColor">“</span>Chcę głośno powiedzieć: nie bójcie się walczyć o swoje prawa.<span class="lColor">”</span>
 
 <p class="name">Bartosz Arłukowicz (PO)
 <br>
@@ -637,7 +646,7 @@ Rząd wraz z najważniejszymi państwowymi instytucjami ma do dyspozycji 1700 li
 <div class="explain">
 1 lipca 2014 roku ukazała się nowa lista leków refundowanych. Pierwsze dziesięć miejsc na liście leków, które najbardziej podrożały zajmują medykamenty stosowane w leczeniu raka, pierwszy z nich przed zmianą kosztował 3,20 a po zmianie 122,80. Minister Zdrowia zapowiada, że zmiany te mają charakter przejściowy i będą obowiązywały w okresie wakacji. Czy nowotwór zaplanował już urlop?
 
-<button>Więcej</button>
+<button class="lColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -651,7 +660,7 @@ Rząd wraz z najważniejszymi państwowymi instytucjami ma do dyspozycji 1700 li
 <div id="mContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Tanie państwo okazało się mitem, fałszem, oszustwem.<span>”</span>
+<span class="mColor">“</span>Tanie państwo okazało się mitem, fałszem, oszustwem.<span class="mColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -662,7 +671,7 @@ Rząd wraz z najważniejszymi państwowymi instytucjami ma do dyspozycji 1700 li
 <div class="explain">
 W 2014 roku Ministerstwo Pracy uruchomiło portal internetowy dla bezdomnych i osób poniżej minimum socjalnego. Na jego uruchomienie wydano 3,3 miliona złotych, łącznie na cały program (wraz z komputerami dla urzędników i innymi wydatkami) przeznaczono 50 milionów złotych, ilu klientów z niego skorzysta?
 
-<button>Więcej</button>
+<button class="mColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -676,7 +685,7 @@ W 2014 roku Ministerstwo Pracy uruchomiło portal internetowy dla bezdomnych i o
 <div id="nContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Mamy oczywiście tą pieprzoną Radę Polityki Pieniężnej... Ale... ale jesteśmy w stanie z nią zagrać. Ale wtedy moim warunkiem, excuse-moi, jest dymisja Ministra Finansów […]. I wtedy zrobimy to, co trzeba..<span>”</span>
+<span class="nColor">“</span>Mamy oczywiście tą pieprzoną Radę Polityki Pieniężnej... Ale... ale jesteśmy w stanie z nią zagrać. Ale wtedy moim warunkiem, excuse-moi, jest dymisja Ministra Finansów […]. I wtedy zrobimy to, co trzeba..<span class="nColor">”</span>
 
 <p class="name">Marek Belka
 <br>
@@ -687,7 +696,7 @@ W 2014 roku Ministerstwo Pracy uruchomiło portal internetowy dla bezdomnych i o
 <div class="explain">
 Narodowy Bank Polski w założeniu ma chronić naszą walutę - polskiego złotego. Ma być również niezależny od polskiego rządu oraz apolityczny. W skutek afery taśmowej mogliśmy poznać kulisy sprawowania władzy. Minister Sienkiewicz omawiał z prezesem NBP Markiem Belką w jaki sposób mogą wspomóc Platformę Obywatelską w nadchodzących wyborach.
 
-<button>Więcej</button>
+<button class="nColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -701,7 +710,7 @@ Narodowy Bank Polski w założeniu ma chronić naszą walutę - polskiego złote
 <div id="oContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Nie ma mowy o tym, żeby państwo sięgnęło po pieniądze, które Polacy odkładali w OFE. To są pieniądze, które mają być w przyszłości gwarancją dobrej emerytury. Nie mam mowy o tym, żeby te pieniądze zabrać komukolwiek.<span>”</span>
+<span class="oColor">“</span>Nie ma mowy o tym, żeby państwo sięgnęło po pieniądze, które Polacy odkładali w OFE. To są pieniądze, które mają być w przyszłości gwarancją dobrej emerytury. Nie mam mowy o tym, żeby te pieniądze zabrać komukolwiek.<span class="oColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -712,7 +721,7 @@ Narodowy Bank Polski w założeniu ma chronić naszą walutę - polskiego złote
 <div class="explain">
 W Lutym 2014 roku rząd koalicji PO-PSL umorzył obligacje skarbowe wykupione z pieniędzy przekazywanych przez przyszłych emerytów do OFE. W praktyce zabrano połowę zgromadzonych na bezpieczną przyszłość oszczędności, zostaną one wykorzystane na bieżące potrzeby państwa.
 
-<button>Więcej</button>
+<button class="oColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -726,7 +735,7 @@ W Lutym 2014 roku rząd koalicji PO-PSL umorzył obligacje skarbowe wykupione z 
 <div id="pContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Sam poziom opodatkowania i oskładkowania (pracy – przyp. red.) w Polsce jest niski.<span>”</span>
+<span class="pColor">“</span>Sam poziom opodatkowania i oskładkowania (pracy – przyp. red.) w Polsce jest niski.<span class="pColor">”</span>
 
 <p class="name">Mateusz Szczurek
 <br>
@@ -737,7 +746,7 @@ W Lutym 2014 roku rząd koalicji PO-PSL umorzył obligacje skarbowe wykupione z 
 <div class="explain">
 W przypadku zawarcia z pracownikiem umowy o pracę zakładającej otrzymanie przez niego co miesiąc kwoty wynagrodzenia odpowiadającej minimalnej krajowej, pracodawca będzie musiał przeznaczyć na ten cel 2028,43 zł. Ostatecznie na koncie zatrudnionego zostanie 1237,20. Należy pamiętać również o innych daninach publicznych, takich jak: VAT, akcyza, podatek śmieciowy, podatek od czynności cywilno-prawnych, podatek od nieruchomości i inne…
 
-<button>Więcej</button>
+<button class="pColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -751,7 +760,7 @@ W przypadku zawarcia z pracownikiem umowy o pracę zakładającej otrzymanie prz
 <div id="rContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Zadaniem Państwa jest roztropne wspieranie rodziny i tradycyjnych norm obyczajowych, służących jej trwałości i rozwojowi.<span>”</span>
+<span class="rColor">“</span>Zadaniem Państwa jest roztropne wspieranie rodziny i tradycyjnych norm obyczajowych, służących jej trwałości i rozwojowi.<span class="rColor">”</span>
 
 <p class="name">Deklaracja ideowa Platformy Obywatelskiej
 <br>
@@ -762,7 +771,7 @@ W przypadku zawarcia z pracownikiem umowy o pracę zakładającej otrzymanie prz
 <div class="explain">
 W 2013 roku w 224 państwach świata przeprowadzono badanie dzietności. Jak się okazało, Polska zajmuje jedną z ostatnich lokat - 212 miejsce. Nasz system emerytalny w całości opiera się na tzw. "solidarności międzypokoleniowej" czyli młodsze pokolenia utrzymują starsze. Niestety, coraz mniej małżeństw w Polsce decyduje się na dziecko.
 
-<button>Więcej</button>
+<button class="rColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -776,7 +785,7 @@ W 2013 roku w 224 państwach świata przeprowadzono badanie dzietności. Jak si�
 <div id="sContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Napatrzyłem się na ludzi władzy, którzy myślą, że wszystko im wolno. Których pazerność nie zna granic. Ale dziś mówię z całą powagą: koniec z ich przywilejami. Weźmiemy za to odpowiedzialność.<span>”</span>
+<span class="sColor">“</span>Napatrzyłem się na ludzi władzy, którzy myślą, że wszystko im wolno. Których pazerność nie zna granic. Ale dziś mówię z całą powagą: koniec z ich przywilejami. Weźmiemy za to odpowiedzialność.<span class="sColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -787,7 +796,7 @@ W 2013 roku w 224 państwach świata przeprowadzono badanie dzietności. Jak si�
 <div class="explain">
 Minister Pracy, Władysław Kosiniak-Kamysz (PSL) zatrudnia dla siebie i swoich 6 zastępców aż 19 kierowców. Dla porównania, w Szwecji żaden z ministrów nie może liczyć na służbowy samochód, a w Wielkiej Brytanii to prawo przysługuje tylko Ministrowi Spraw Zagranicznych.
 
-<button>Więcej</button>
+<button class="sColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -801,7 +810,7 @@ Minister Pracy, Władysław Kosiniak-Kamysz (PSL) zatrudnia dla siebie i swoich 
 <div id="tContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Jestem poruszony zawartością tych taśm. Dziękuję dziennikarzom, za wspieranie demokracji poprzez ujawnienie kompromitującego przypadku skandalicznej korupcji politycznej jakiej dopuścił się PiS. Miliony Polaków mogły poznać dzięki tym nagraniom kulisy kuchni politycznej kompromitującej obecny rząd.<span>”</span>
+<span class="tColor">“</span>Jestem poruszony zawartością tych taśm. Dziękuję dziennikarzom, za wspieranie demokracji poprzez ujawnienie kompromitującego przypadku skandalicznej korupcji politycznej jakiej dopuścił się PiS. Miliony Polaków mogły poznać dzięki tym nagraniom kulisy kuchni politycznej kompromitującej obecny rząd.<span class="tColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -812,7 +821,7 @@ Minister Pracy, Władysław Kosiniak-Kamysz (PSL) zatrudnia dla siebie i swoich 
 <div class="explain">
 Tak Donald Tusk wypowiadał się o taśmach Renaty Beger. W 2014 roku, gdy sprawa dotyczyła jego rządu radykalnie zmienił zdanie: "Taśmy powstały nielegalnie - teraz najważniejsze zadanie, to ustalić, kto nagrał te rozmowy".
 
-<button>Więcej</button>
+<button class="tColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -826,7 +835,7 @@ Tak Donald Tusk wypowiadał się o taśmach Renaty Beger. W 2014 roku, gdy spraw
 <div id="uContent">
 <div class="left">
 <div class="cite">
-<span>“</span>To nieprawda! Wypracowuję ją jako urzędnik państwowy, wydając panu zaświadczenia, by mógł pan prowadzić działalność gospodarczą, przygotowując działkę do inwestycji i tak dalej. W sumie to ja panu pozwalam pracować.<span>”</span>
+<span class="uColor">“</span>To nieprawda! Wypracowuję ją jako urzędnik państwowy, wydając panu zaświadczenia, by mógł pan prowadzić działalność gospodarczą, przygotowując działkę do inwestycji i tak dalej. W sumie to ja panu pozwalam pracować.<span class="uColor">”</span>
 
 <p class="name">Elżbieta Jakubiak (PJN)
 <br>
@@ -837,7 +846,7 @@ Tak Donald Tusk wypowiadał się o taśmach Renaty Beger. W 2014 roku, gdy spraw
 <div class="explain">
 W 2014 roku w urzędach administracji centralnej (ministerstwa, kancelaria premiera itp.) zatrudnionych było prawie o 250 osób więcej niż przed rokiem i o 700 więcej niż dwa lata temu. Łączna liczba urzędników w tych instytucjach przekracza już 15 000. Również z planu finansowego NFZ na 2015 rok wynika, że pieniędzy będzie więcej… Zostaną one wykorzystane na 70 nowych etatów, ze względu na te zatrudnienia, pula na płace wzrośnie o 4,4 miliona złotych.
 
-<button>Więcej</button>
+<button class="uColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -851,10 +860,10 @@ W 2014 roku w urzędach administracji centralnej (ministerstwa, kancelaria premi
 <div id="vContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Przysięgam Polakom, że każdy,
+<span class="vColor">“</span>Przysięgam Polakom, że każdy,
 kto w moim rządzie zaproponuje
 podwyżkę podatków, zostanie
-przeze mnie osobiście wyrzucony.<span>”</span>
+przeze mnie osobiście wyrzucony.<span class="vColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -868,7 +877,7 @@ płacąc za artykuły pierwszej potrzeby. Czy wiesz,
 że Unia Europejska pozwala obniżyć go do 15%,
 a Polska ma jedną z najwyższych stawek w Europie?
 
-<button>Więcej</button>
+<button class="vColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -882,7 +891,7 @@ a Polska ma jedną z najwyższych stawek w Europie?
 <div id="wContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Praca matką wszystkiego dobrego.<span>”</span>
+<span class="wColor">“</span>Praca matką wszystkiego dobrego.<span class="wColor">”</span>
 
 <p class="name">Motto Rady Ochrony Pracy przy Sejmie.
 <br>
@@ -893,7 +902,7 @@ a Polska ma jedną z najwyższych stawek w Europie?
 <div class="explain">
 Sejmowa Rada Ochrony Pracy obraduje około 12-13 razy do roku. Zwykle spotkania trwają około godzinę. Przewodnicząca tego gremium Katarzyna Mrzygłocka (PO) w 2013 roku zarobiła 40,9 tys. zł z tytułu piastowania tej funkcji. Co było jedynie dodatkiem do jej regularnej pensji i diety poselskiej (ok. 160 tys. zł rocznie). Przyjmując, że poświęciła 20 godzin na czas spędzony w radzie jej stawka wynosiła 2050 zł/h. Czy znasz efekty jej prac?
 
-<button>Więcej</button>
+<button class="wColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -907,10 +916,10 @@ Sejmowa Rada Ochrony Pracy obraduje około 12-13 razy do roku. Zwykle spotkania 
 <div id="xContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Przysięgam Polakom, że każdy,
+<span class="xColor">“</span>Przysięgam Polakom, że każdy,
 kto w moim rządzie zaproponuje
 podwyżkę podatków, zostanie
-przeze mnie osobiście wyrzucony.<span>”</span>
+przeze mnie osobiście wyrzucony.<span class="xColor">”</span>
 
 <p class="name">Donald Tusk (PO)
 <br>
@@ -921,7 +930,7 @@ przeze mnie osobiście wyrzucony.<span>”</span>
 <div class="explain">
 W 2015 roku kolejne wybory parlamentarne. Zagłosuj zgodnie z sumieniem, nadeszła pora, by rząd i politycy ponieśli odpowiedzialność za swoje czyny.
 
-<button>Więcej</button>
+<button class="xColor">Więcej</button>
 </div></div>
 
 <footer>
@@ -935,7 +944,7 @@ W 2015 roku kolejne wybory parlamentarne. Zagłosuj zgodnie z sumieniem, nadesz�
 <div id="zContent">
 <div class="left">
 <div class="cite">
-<span>“</span>Dzięki reformom proponowanym przez Platformę Obywatelską system opieki zdrowotnej stanie się efektywniejszy.<span>”</span>
+<span class="zColor">“</span>Dzięki reformom proponowanym przez Platformę Obywatelską system opieki zdrowotnej stanie się efektywniejszy.<span class="zColor">”</span>
 
 <p class="name">Program Wyborczy PO
 <br>
@@ -946,7 +955,7 @@ W 2015 roku kolejne wybory parlamentarne. Zagłosuj zgodnie z sumieniem, nadesz�
 <div class="explain">
 W 2013 roku Polska zajęła 31. miejsce na 34. w rankingu Europejskiego Konsumenckiego Indeksu Zdrowia, tuż po Rumunii, Łotwie i Serbii. W porównaniu z 2012 r. nastąpił spadek aż o 4 pozycje. Natomiast liczba osób umierających w wyniku chorób nowotworowych jest jedną z największych w Europie.
 
-<button>Więcej</button>
+<button class="zColor">Więcej</button>
 </div></div>
 
 <footer>

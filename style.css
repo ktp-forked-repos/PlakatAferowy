@@ -42,6 +42,103 @@ button {
 	border-radius: 5px;
 	font-weight: bold;
 }
+
+#aContent button {
+    border: 2px solid #bf0436;
+}
+
+#bContent button {
+    border: 2px solid #ff0000;
+}
+
+#cContent button {
+    border: 2px solid #5DA611;
+}
+
+#dContent button {
+    border: 2px solid #0248A9;
+}
+
+#eContent button {
+    border: 2px solid #F5DF0A;
+}
+
+#fContent button {
+    border: 2px solid #00C7FF;
+}
+
+#gContent button {
+    border: 2px solid #BF0C89;
+}
+
+#hContent button {
+    border: 2px solid #94A3BB;
+}
+
+#iContent button {
+    border: 2px solid #DC3C05;
+}
+
+#jContent button {
+    border: 2px solid #FFAC40;
+}
+
+#kContent button {
+    border: 2px solid #F38707;
+}
+
+#lContent button {
+    border: 2px solid #20DAFF;
+}
+
+#mContent button {
+    border: 2px solid #A211E8;
+}
+
+#nContent button {
+    border: 2px solid #825a2c;
+}
+
+#oContent button {
+    border: 2px solid #e51400;
+}
+
+#pContent button {
+    border: 2px solid #008a00;
+}
+
+#rContent button {
+    border: 2px solid #f472d0;
+}
+
+#sContent button {
+    border: 2px solid #fa6800;
+}
+
+#tContent button {
+    border: 2px solid #aa00ff;
+}
+
+#uContent button {
+    border: 2px solid #ffe100;
+}
+
+#vContent button {
+    border: 2px solid #4b83f2;
+}
+
+#wContent button {
+    border: 2px solid #00aba9;
+}
+
+#xContent button {
+    border: 2px solid #ffffff;
+}
+
+#zContent button {
+    border: 2px solid #F05526;
+}
+
 .explain {
 	font-size: 20.7px;
 	
@@ -83,8 +180,100 @@ footer {
     overflow: hidden;
 }
 
-.cite > span {
+.aColor {
+    color: #bf0436;
+}
+
+.bColor {
+    color: #ff0000;
+}
+
+.cColor {
+    color: #5DA611;
+}
+
+.dColor {
+    color: #0248A9;
+}
+
+.eColor {
+    color: #F5DF0A;
+}
+
+.fColor {
+    color: #00C7FF;
+}
+
+.gColor {
+    color: #BF0C89;
+}
+
+.hColor {
+    color: #94A3BB;
+}
+
+.iColor {
+    color: #DC3C05;
+}
+
+.jColor {
+    color: #FFAC40;
+}
+
+.kColor {
+    color: #F38707;
+}
+
+.lColor {
+    color: #20DAFF;
+}
+
+.mColor {
+    color: #A211E8;
+}
+
+.nColor {
+    color: #825a2c;
+}
+
+.oColor {
+    color: #e51400;
+}
+
+.pColor {
+    color: #008a00;
+}
+
+.rColor {
+    color: #f472d0;
+}
+
+.sColor {
+    color: #fa6800;
+}
+
+.tColor {
+    color: #aa00ff;
+}
+
+.uColor {
+    color: #ffe100;
+}
+
+.vColor {
     color: #4b83f2;
+}
+
+.wColor {
+    color: #00aba9;
+}
+
+.xColor {
+    color: #ffffff;
+}
+
+.zColor {
+    color: #F05526;
 }
 
 .cite, .explain {
@@ -132,7 +321,7 @@ big {
     top: 25px;
 }
 
-#bContent, #cContent, #dContent, #eContent, #fContent, #gContent, #hContent, #iContent, #jContent, #kContent, #lContent, #mContent, #nContent, #oContent, #pContent, #rContent, #sContent, #tContent, #uContent, #vContent, #wContent, #xContent, #zContent { display: none; }
+#aContent, #bContent, #cContent, #dContent, #eContent, #fContent, #gContent, #hContent, #iContent, #jContent, #kContent, #lContent, #mContent, #nContent, #oContent, #pContent, #rContent, #sContent, #tContent, #uContent, #vContent, #wContent, #xContent, #zContent { display: none; }
 
 #a:hover:after {
     content: "a";
