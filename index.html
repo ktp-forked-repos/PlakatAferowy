@@ -3,337 +3,37 @@
 <title>Plakat aferowy</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript">
+<script src="script.js"></script>
 
-function showContent() {
-	var hash = $(location).attr('hash');
-	var hashConcatContent = hash + "Content";
-	$(hashConcatContent).fadeIn();
-};
-
-$(document).ready(function(){
-
-	showContent();
-
-	$('#a').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"aColor\">Aa</big></div> <div class=\"white right\">Akcyza</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#aContent" ).fadeIn();
-				});
-	});
-
-	$('#b').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"bColor\">Bb</big></div> <div class=\"white right\">Bezrobocie</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#bContent" ).fadeIn();
-				});
-	});
-
-	$('#c').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"cColor\">Cc</big></div> <div class=\"white right\">Cynizm</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#cContent" ).fadeIn();
-				});
-	});
-
-	$('#d').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"dColor\">Dd</big></div> <div class=\"white right\">Leszke</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#dContent" ).fadeIn();
-				});
-	});
-
-	$('#e').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"eColor\">Ee</big></div> <div class=\"white right\">Emigracja</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#eContent" ).fadeIn();
-				});
-	});
-
-	$('#f').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"fColor\">Ff</big></div> <div class=\"white right\">Fiskus</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#fContent" ).fadeIn();
-				});
-	});
-
-	$('#g').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"gColor\">Gg</big></div> <div class=\"white right\">Głód</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#gContent" ).fadeIn();
-				});
-	});
-
-	$('#h').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"hColor\">Hh</big></div> <div class=\"white right\">Hazard</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#hContent" ).fadeIn();
-				});
-	});
-
-	$('#i').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"iColor\">Ii</big></div> <div class=\"white right\">Inwigilacja</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#iContent" ).fadeIn();
-				});
-	});
-
-	$('#j').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"jColor\">Jj</big></div> <div class=\"white right\">Jaka emerytura?</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#jContent" ).fadeIn();
-				});
-	});
-
-	$('#k').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"kColor\">Kk</big></div> <div class=\"white right\">Karetki</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#kContent" ).fadeIn();
-				});
-	});
-
-	$('#l').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"lColor\">Ll</big></div> <div class=\"white right\">Leki</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#lContent" ).fadeIn();
-				});
-	});
-
-	$('#m').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"mColor\">Mm</big></div> <div class=\"white right\">Marnotrawstwo</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#mContent" ).fadeIn();
-				});
-	});
-
-	$('#n').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"nColor\">Nn</big></div> <div class=\"white right\">Niezależność NBP</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#nContent" ).fadeIn();
-				});
-	});
-
-	$('#o').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"oColor\">Oo</big></div> <div class=\"white right\">OFE</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#oContent" ).fadeIn();
-				});
-	});
-
-	$('#p').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"pColor\">Pp</big></div> <div class=\"white right\">Podatek dochodowy</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#pContent" ).fadeIn();
-				});
-	});
-
-	$('#r').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"rColor\">Rr</big></div> <div class=\"white right\">Rodzina</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#rContent" ).fadeIn();
-				});
-	});
-
-	$('#s').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"sColor\">Ss</big></div> <div class=\"white right\">Szofer</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#sContent" ).fadeIn();
-				});
-	});
-
-	$('#t').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"tColor\">Tt</big></div> <div class=\"white right\">Taśmy</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#tContent" ).fadeIn();
-				});
-	});
-
-	$('#u').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"uColor\">Uu</big></div> <div class=\"white right\">Urzędnicy</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#uContent" ).fadeIn();
-				});
-	});
-
-	$('#v').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"vColor\">Vv</big></div> <div class=\"white right\">Podatek VAT</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#vContent" ).fadeIn();
-				});
-	});
-
-	$('#w').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"wColor\">Ww</big></div> <div class=\"white right\">Wypłata</div></div>" );
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#wContent" ).fadeIn();
-				});
-	});
-
-	$('#x').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"xColor\">Xx</big></div> <div class=\"white right\">Wybory</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#xContent" ).fadeIn();
-				});
-	});
-
-	$('#z').click( function() {
-		var hash = $(location).attr('hash');
-		var hashConcatContent = hash + "Content";
-		var oldHash = hash.substring(1);
-		$(hash).html(oldHash.toUpperCase());
-		$( this ).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"zColor\">Zz</big></div> <div class=\"white right\">Zdrowie</div></div>" );
-		$(hashConcatContent).fadeOut(
-				function() {
-					$( "#zContent" ).fadeIn();
-				});
-	});
-
-});
-</script>
 </head>
 <body>
 <header>
 
 <ul class="abc">
-<li id="a"><a href="#a">A</a></li>
-<li id="b"><a href="#b">B</a></li>
-<li id="c"><a href="#c">C</a></li>
-<li id="d"><a href="#d">D</a></li>
-<li id="e"><a href="#e">E</a></li>
-<li id="f"><a href="#f">F</a></li>
-<li id="g"><a href="#g">G</a></li>
-<li id="h"><a href="#h">H</a></li>
-<li id="i"><a href="#i">I</a></li>
-<li id="j"><a href="#j">J</a></li>
-<li id="k"><a href="#k">K</a></li>
-<li id="l"><a href="#l">L</a></li>
-<li id="m"><a href="#m">M</a></li>
-<li id="n"><a href="#n">N</a></li>
-<li id="o"><a href="#o">O</a></li>
-<li id="p"><a href="#p">P</a></li>
-<li id="r"><a href="#r">R</a></li>
-<li id="s"><a href="#s">S</a></li>
-<li id="t"><a href="#t">T</a></li>
-<li id="u"><a href="#u">U</a></li>
-<li id="v"><a href="#v">V</a></li>
-<li id="w"><a href="#w">W</a></li>
-<li id="x"><a href="#x">X</a></li>
-<li id="z"><a href="#z">Z</a></li>
+	<li id="a"><a href="#a">A</a></li>
+	<li id="b"><a href="#b">B</a></li>
+	<li id="c"><a href="#c">C</a></li>
+	<li id="d"><a href="#d">D</a></li>
+	<li id="e"><a href="#e">E</a></li>
+	<li id="f"><a href="#f">F</a></li>
+	<li id="g"><a href="#g">G</a></li>
+	<li id="h"><a href="#h">H</a></li>
+	<li id="i"><a href="#i">I</a></li>
+	<li id="j"><a href="#j">J</a></li>
+	<li id="k"><a href="#k">K</a></li>
+	<li id="l"><a href="#l">L</a></li>
+	<li id="m"><a href="#m">M</a></li>
+	<li id="n"><a href="#n">N</a></li>
+	<li id="o"><a href="#o">O</a></li>
+	<li id="p"><a href="#p">P</a></li>
+	<li id="r"><a href="#r">R</a></li>
+	<li id="s"><a href="#s">S</a></li>
+	<li id="t"><a href="#t">T</a></li>
+	<li id="u"><a href="#u">U</a></li>
+	<li id="v"><a href="#v">V</a></li>
+	<li id="w"><a href="#w">W</a></li>
+	<li id="x"><a href="#x">X</a></li>
+	<li id="z"><a href="#z">Z</a></li>
 </ul>
 
 </header>
