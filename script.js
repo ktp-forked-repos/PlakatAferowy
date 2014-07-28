@@ -56,7 +56,7 @@ $(document).ready(function(){
 				fullName = "Inwigilacja"
 				break;
 			case "#j":
-				fullName = "Jaka emerytura?"
+				fullName = "Jak żyć?"
 				break;
 			case "#k":
 				fullName = "Karetki"
@@ -103,9 +103,9 @@ $(document).ready(function(){
 		}
 
 		if(hash == "") {
-			$('#a').html( "<div class=\"abcClick\"><div class=\"left\"><big class=\"aColor\">Aa</big></div> <div class=\"white right\">Akcyza</div></div>" );
+			$('#a').html( "<div class=\"abcClick\"><div class=\"leftMenu\"><big class=\"aColor\">Aa</big></div> <div class=\"white rightMenu\">Akcyza</div></div>" );
 		} else {
-			$(hash).html( "<div class=\"abcClick\"><div class=\"left\"><big class=\""+newMenuLetter+"Color\">"+newMenuLetter.toUpperCase()+newMenuLetter+"</big></div> <div class=\"white right\">"+fullName+"</div></div>" );
+			$(hash).html( "<div class=\"abcClick\"><div class=\"leftMenu\"><big class=\""+newMenuLetter+"Color\">"+newMenuLetter.toUpperCase()+newMenuLetter+"</big></div> <div class=\"white rightMenu\">"+fullName+"</div></div>" );
 		}
 	}
 

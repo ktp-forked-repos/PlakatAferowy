@@ -7,18 +7,17 @@ body {
     overflow: hidden;
 }
 header {
-	margin-bottom: 10%;
-	margin-top: 5%;
+	margin-bottom: 8%;
+	margin-top: 2%;
 }
-.abc {
+.alphabet {
 	color: #727272;
-	width: 90%;
-	margin: 0 auto;
+    text-align: center;
 	letter-spacing: 3.5;
     font-size: 24px;
     font-family: 'Helvetica Neue LT Pro 75 Bold';
 }
-.abc li {
+.alphabet li {
 	display: inline-block;
 }
 a {
@@ -168,13 +167,13 @@ small {
     font-weight: normal;
     src: local('Helvetica Neue LT Pro 75 Bold'), url('HelveticaNeueLTPro-Bd.woff') format('woff');
 }
-
+/* Koniec emtei */
 
 footer {
     width: 100%;
     position: absolute;
     bottom: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     text-align: center;
     font-size: 20.37px;
     overflow: hidden;
@@ -288,6 +287,22 @@ footer {
     width: 50%;
 }
 
+.leftMenu {
+    float: left;
+    border-right: 2px solid #727272;
+    padding-right: 10px;
+    vertical-align: middle;
+    display: block;
+    line-height: 1;
+}
+
+.rightMenu {
+    float: left;
+    padding-left: 10px;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
 .min1 {
    width: 259px;
     margin-bottom: -197px;
@@ -304,25 +319,22 @@ margin-left: -61px;
     color: #fff;
 }
 
-.blue {
-    color: #4b83f2;
-}
-
 big {
     font-size: 170%;
-    border-right: 2px solid #727272;
-    padding-right: 20px;
 }
 
 .abcClick {
     margin: 0 40px;
+    min-height: 54px;
     vertical-align: middle;
     position: relative;
     top: 25px;
+    text-align: center;
+
 }
 
 #aContent, #bContent, #cContent, #dContent, #eContent, #fContent, #gContent, #hContent, #iContent, #jContent, #kContent, #lContent, #mContent, #nContent, #oContent, #pContent, #rContent, #sContent, #tContent, #uContent, #vContent, #wContent, #xContent, #zContent { display: none; }
-
+/*
 #a:hover:after {
     content: "a";
     color: #fff;
@@ -418,4 +430,4 @@ big {
 #z:hover:after {
     content: "z";
     color: #fff;
-}
+}*/
