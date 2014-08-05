@@ -4,6 +4,198 @@ $(document).ready(function(){
 
 	var previousHash = window.location.hash;
 
+	$( "#a" ).hover(
+	  function() {
+	  	$( this ).html( "<li id=\"a\"><a href=\"#a\">Aa</a></li>" );
+	  }, function() {
+	    $( this ).html( "<li id=\"a\"><a href=\"#a\">Bdupa</a></li>" );
+	  }
+	);
+
+	$( "#b" ).hover(
+	  function() {
+	    $( this ).html( "<li id=\"b\"><a href=\"#b\">Bb</a></li>" );
+	  }, function() {
+	    $( this ).html( "<li id=\"b\"><a href=\"#b\">Bdupa</a></li>" );
+	  }
+	);
+
+	$( "#c" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">c</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#d" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">d</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#e" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">e</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#f" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">f</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#g" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">g</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#h" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">h</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#i" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">i</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#j" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">j</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#k" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">k</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#l" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">l</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#m" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">m</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#n" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">n</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#o" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">o</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#p" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">p</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#r" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">r</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#s" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">s</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#t" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">t</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#u" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">u</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#v" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">v</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#w" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">w</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#x" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">x</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
+	$( "#z" ).hover(
+	  function() {
+	    $( this ).append( $( "<span class=\"white\">z</span>" ) );
+	  }, function() {
+	    $( this ).find( "span:last" ).remove();
+	  }
+	);
+
 	if(previousHash == "") {
 		previousHash = "#a";
 	}
