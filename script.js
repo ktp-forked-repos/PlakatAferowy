@@ -6,15 +6,17 @@ $(document).ready(function(){
 
 	$( "#a" ).hover(
 	  function() {
-	  	$( this ).html( "<li id=\"a\"><a href=\"#a\">Aa</a></li>" );
+	  	$( this ).hide();
+	  	$( "#a2" ).show();
 	  }, function() {
-	    $( this ).html( "<li id=\"a\"><a href=\"#a\">Bdupa</a></li>" );
+	    $( this ).html( "<li id=\"a\"><a href=\"#a\">Adupa</a></li>" );
 	  }
 	);
 
 	$( "#b" ).hover(
 	  function() {
-	    $( this ).html( "<li id=\"b\"><a href=\"#b\">Bb</a></li>" );
+	   	$( this ).hide();
+	  	$( "#b2" ).show();
 	  }, function() {
 	    $( this ).html( "<li id=\"b\"><a href=\"#b\">Bdupa</a></li>" );
 	  }
