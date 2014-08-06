@@ -6,19 +6,17 @@ $(document).ready(function(){
 
 	$( "#a" ).hover(
 	  function() {
-	  	$( this ).hide();
-	  	$( "#a2" ).show();
+		$( this ).html("<a href=\"#a\">Aa</a>");
 	  }, function() {
-	    $( this ).html( "<li id=\"a\"><a href=\"#a\">Adupa</a></li>" );
+	    $( this ).html("<a href=\"#a\">A</a>");
 	  }
 	);
 
 	$( "#b" ).hover(
 	  function() {
-	   	$( this ).hide();
-	  	$( "#b2" ).show();
+		$( this ).html("<a href=\"#b\">Bb</a>");
 	  }, function() {
-	    $( this ).html( "<li id=\"b\"><a href=\"#b\">Bdupa</a></li>" );
+	    $( this ).html("<a href=\"#b\">B</a>");
 	  }
 	);
 
@@ -39,11 +37,7 @@ $(document).ready(function(){
 	);
 
 	$( "#e" ).hover(
-	  function() {
-	    $( this ).append( $( "<span class=\"white\">e</span>" ) );
-	  }, function() {
-	    $( this ).find( "span:last" ).remove();
-	  }
+	  function() { if(window.location.hash != "#e"){$( this ).append( $( "<span class=\"white\">e</span>" ) );} }, function() { $( this ).find( "span:last" ).remove(); }
 	);
 
 	$( "#f" ).hover(
