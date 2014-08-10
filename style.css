@@ -21,6 +21,10 @@ header {
 	display: inline-block;
 }
 
+#alphabet2 {
+    display: none;
+}
+
 a {
 	color: #727272;
 	text-decoration: none;

@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	function displayMobileMenu(){
+		alert("dupa");
+		//$( '#alphabet2' ).Show();
+	};
+
 	showContent();
 
 	var previousHash = window.location.hash;
@@ -294,8 +299,9 @@ $(document).ready(function(){
 			$('#a').html( "<div class=\"abcClick\"><div class=\"leftMenu\"><big class=\"aColor\">Aa</big></div> <div class=\"white rightMenu\">Akcyza</div></div>" );
 		} else {
 			$(hash).html( "<div class=\"abcClick\"><div class=\"leftMenu\"><big class=\""+newMenuLetter+"Color\">"+newMenuLetter.toUpperCase()+newMenuLetter+"</big></div> <div class=\"white rightMenu\">"+fullName+"</div></div>" );
+			$('#mobileMenu').html( "<div class=\"leftMenu\"><big class=\""+newMenuLetter+"Color\">"+newMenuLetter.toUpperCase()+newMenuLetter+"</big></div> <div class=\"white rightMenu\">"+fullName+"</div>" );
 		}
-	}
+	};
 
 	$(window).on('hashchange', function() {
 		var hash = window.location.hash;
