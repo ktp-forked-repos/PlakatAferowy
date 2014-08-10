@@ -10,16 +10,28 @@ header {
 	margin-bottom: 8%;
 	margin-top: 2%;
 }
-.alphabet {
+#alphabet {
 	color: #727272;
     text-align: center;
 	letter-spacing: 3.5;
     font-size: 24px;
     font-family: 'Helvetica Neue LT Pro 75 Bold';
 }
-.alphabet li {
+#alphabet li {
 	display: inline-block;
 }
+
+#alphabet2 {
+    color: #727272;
+    text-align: center;
+    letter-spacing: 3.5;
+    font-size: 24px;
+    font-family: 'Helvetica Neue LT Pro 75 Bold';
+}
+#alphabet2 li {
+    display: inline-block;
+}
+
 a {
 	color: #727272;
 	text-decoration: none;
@@ -335,3 +347,45 @@ big {
 
 #aContent, #bContent, #cContent, #dContent, #eContent, #fContent, #gContent, #hContent, #iContent, #jContent, #kContent, #lContent, #mContent, #nContent, #oContent, #pContent, #rContent, #sContent, #tContent, #uContent, #vContent, #wContent, #xContent, #zContent { display: none; }
 #a2,#b2,#c2,#d2,#e2,#f2,#g2,#h2,#i2,#j2,#k2,#l2,#m2,#n2,#o2,#p2,#r2,#s2,#t2,#u2,#v2,#w2,#x2,#z2 { display: none; }
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #alphabet2{
+    display: inline-block;
+}
+
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
