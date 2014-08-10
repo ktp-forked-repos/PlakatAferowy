@@ -1,8 +1,51 @@
+function displayMobileMenu(){
+	$( '#alphabet2' ).fadeIn();
+	$( '#showMenuLink' ).attr("href", "javascript:hideMobileMenu();")
+	$( '#aContent' ).fadeOut();
+};
+
+function hideMobileMenu(){
+	$( '#alphabet2' ).fadeOut();
+	$( '#showMenuLink' ).attr("href", "javascript:displayMobileMenu();")
+	showContent();
+};
+
+function showContent(){
+	var hash = window.location.hash;
+    if(hash == "") {
+        $('#aContent').fadeIn();
+        menuFullNameShow();
+    } else {
+    	var hashConcatContent = hash + "Content";
+		$(hashConcatContent).fadeIn();
+		
+		menuFullNameShow();
+    }
+};
+
+function hideContent(){
+	var hash = window.location.hash;
+    if(hash == "") {
+        $('#aContent').fadeOut();
+    } else {
+    	var hashConcatContent = hash + "Content";
+		$(hashConcatContent).fadeOut();
+    }
+};
+
 $(document).ready(function(){
 
-	function displayMobileMenu(){
-		alert("dupa");
-		//$( '#alphabet2' ).Show();
+	function showContent(){
+		var hash = window.location.hash;
+	    if(hash == "") {
+	        $('#aContent').fadeIn();
+	        menuFullNameShow();
+	    } else {
+	    	var hashConcatContent = hash + "Content";
+			$(hashConcatContent).fadeIn();
+			
+			menuFullNameShow();
+	    }
 	};
 
 	showContent();
@@ -200,20 +243,6 @@ $(document).ready(function(){
 	if(previousHash == "") {
 		previousHash = "#a";
 	}
-
-	function showContent() {
-		var hash = window.location.hash;
-	    if(hash == "") {
-	        $('#aContent').fadeIn();
-
-	        menuFullNameShow();
-	    } else {
-	    	var hashConcatContent = hash + "Content";
-			$(hashConcatContent).fadeIn();
-			
-			menuFullNameShow();
-	    }
-	};
 
 	function menuFullNameShow() {
 		var hash = window.location.hash;

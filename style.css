@@ -5,6 +5,7 @@ body {
 	color: #f2f2f2;
     font-family: 'Helvetica Neue LT Pro 65 Medium';
     overflow: hidden;
+    height: 100%;
 }
 header {
 	margin-bottom: 8%;
@@ -23,6 +24,12 @@ header {
 
 #alphabet2 {
     display: none;
+    color: #727272;
+    text-align: center;
+    letter-spacing: 3.5;
+    font-size: 24px;
+    font-family: 'Helvetica Neue LT Pro 75 Bold';
+    list-style: none;
 }
 
 a {
@@ -142,7 +149,6 @@ button {
 #zContent button {
     border: 2px solid #F05526;
 }
-
 .explain {
 	font-size: 20.7px;
 	
@@ -282,7 +288,7 @@ footer {
 
 .cite, .explain {
     text-align: center;
-    width: 490px;
+    width: 75%;
     display: block;
     margin: 0 auto;
 }
@@ -299,6 +305,14 @@ footer {
     vertical-align: middle;
     display: block;
     line-height: 1;
+}
+
+.leftMenuResponsive {
+
+}
+
+.rightMenuResponsive {
+
 }
 
 .rightMenu {
@@ -340,3 +354,33 @@ big {
 
 #aContent, #bContent, #cContent, #dContent, #eContent, #fContent, #gContent, #hContent, #iContent, #jContent, #kContent, #lContent, #mContent, #nContent, #oContent, #pContent, #rContent, #sContent, #tContent, #uContent, #vContent, #wContent, #xContent, #zContent { display: none; }
 #a2,#b2,#c2,#d2,#e2,#f2,#g2,#h2,#i2,#j2,#k2,#l2,#m2,#n2,#o2,#p2,#r2,#s2,#t2,#u2,#v2,#w2,#x2,#z2 { display: none; }
+
+#showMenuLink {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    #alphabet {
+        display: none;
+    }
+    #showMenuLink {
+        display: block;
+    }
+    .explain {
+        font-size: 1em;
+    }
+    .cite {
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 750px) {
+    .right {
+        float: none;
+        width: 100%;
+    }
+    .left {
+        float: none;
+        width: 100%;
+        overflow: auto;
+    }
+}
